@@ -80,6 +80,8 @@ export function Sidebar() {
         borderRight: '1px solid',
         borderColor: 'divider',
         bgcolor: 'background.paper',
+        boxShadow: 6,
+        overflow: 'hidden',
       }}
     >
       <Box sx={{ px: 3, pt: 3, pb: 2 }}>

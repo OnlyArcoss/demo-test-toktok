@@ -6,7 +6,7 @@ import type { PointOfInterest } from '../../types/point'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
 const DEFAULT_CENTER: [number, number] = [2.3522, 48.8566]
-const DEFAULT_ZOOM = 5
+const DEFAULT_ZOOM = 18
 
 interface MapCanvasProps {
   points: PointOfInterest[]

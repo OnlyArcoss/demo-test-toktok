@@ -1,6 +1,7 @@
 import { Alert, Button } from '@mui/material'
 import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined'
 import MeetingRoomOutlinedIcon from '@mui/icons-material/MeetingRoomOutlined'
+import { SIDEBAR_WIDTH } from '../layout/Sidebar'
 
 interface FloatingActionsProps {
   placementMode: boolean
@@ -29,7 +30,7 @@ export function FloatingActions({ placementMode, onNewPointOfInterest, onNewBila
           position: 'absolute',
           zIndex: 10,
           bottom: 24,
-          left: 24,
+          left: `calc(${SIDEBAR_WIDTH}px + 2rem + 24px)`,
           bgcolor: 'background.paper',
           borderRadius: 999,
           px: 2.5,
