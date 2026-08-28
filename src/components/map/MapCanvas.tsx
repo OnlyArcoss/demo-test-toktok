@@ -48,6 +48,8 @@ export function MapCanvas({ points, pendingLocation, placementMode, onMapClick }
     return () => {
       map.remove()
       mapRef.current = null
+      markersRef.current.clear()
+      pendingMarkerRef.current = null
     }
   }, [])
 
